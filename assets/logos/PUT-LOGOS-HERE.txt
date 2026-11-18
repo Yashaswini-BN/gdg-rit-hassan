@@ -1,0 +1,7 @@
+Place the three official logo files provided by the organizers in this folder:
+
+  rit-logo.png   -> Rajeev Institute of Technology logo
+  cse-logo.png   -> Computer Science and Engineering Department logo
+  gdg-logo.png   -> GDG on Campus - RIT Hassan logo
+
+Until these files are added, the site shows small "RIT / CSE / GDG" placeholder badges.

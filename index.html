@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GDG on Campus – RIT Hassan</title>
+  <meta name="description" content="GDG on Campus at Rajeev Institute of Technology, Hassan: a student community for learning Google technologies, building projects and growing together." />
+  <meta name="theme-color" content="#4285F4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    /* Shown only if a logo file is missing, so the layout never breaks. Add the real files to assets/logos/ */
+    function logoFallback(img, label) {
+      var s = document.createElement('span');
+      s.className = 'logo-fallback';
+      s.textContent = label;
+      s.setAttribute('role', 'img');
+      s.setAttribute('aria-label', img.alt + ' (file missing)');
+      img.replaceWith(s);
+    }
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="GDG on Campus RIT Hassan home">
+        <span class="brand-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="brand-text"><strong>GDG on Campus</strong><small>RIT Hassan</small></span>
+      </a>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#tracks" class="nav-link">Tracks</a></li>
+          <li><a href="#events" class="nav-link">Events</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#team" class="nav-link">Team</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Switch to dark theme" title="Toggle theme">
+          <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <a href="#join" class="btn btn-primary btn-sm hide-sm">Join Us</a>
+        <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HOME / HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span>
+        <canvas id="particles"></canvas>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="logo-strip" aria-label="Official logos">
+          <div class="logo-card">
+            <img src="assets/logos/rit-logo.png" alt="Rajeev Institute of Technology logo" loading="eager" onerror="logoFallback(this,'RIT')" />
+          </div>
+          <div class="logo-card">
+            <img src="assets/logos/cse-logo.png" alt="Computer Science and Engineering Department logo" loading="eager" onerror="logoFallback(this,'CSE')" />
+          </div>
+          <div class="logo-card">
+            <img src="assets/logos/gdg-logo.png" alt="GDG on Campus RIT Hassan logo" loading="eager" onerror="logoFallback(this,'GDG')" />
+          </div>
+        </div>
+
+        <p class="eyebrow reveal">Rajeev Institute of Technology · Hassan</p>
+        <h1 class="hero-title reveal">
+          Learn. Build.<br />
+          <span class="grad-text">Grow Together.</span>
+        </h1>
+        <p class="hero-sub reveal">
+          GDG on Campus – RIT Hassan is a student-led community where curiosity meets Google technologies.
+          Workshops, hackathons, study jams and mentors, all in one place.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#join" class="btn btn-primary">Join the Community</a>
+          <a href="#events" class="btn btn-ghost">Explore Events</a>
+        </div>
+
+        <div class="hero-chips reveal" aria-hidden="true">
+          <span class="chip c-blue">&lt;Web/&gt;</span>
+          <span class="chip c-red">Android</span>
+          <span class="chip c-yellow">AI / ML</span>
+          <span class="chip c-green">Cloud</span>
+          <span class="chip c-blue">Flutter</span>
+          <span class="chip c-red">Firebase</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats" aria-label="Community highlights">
+      <div class="container stats-grid">
+        <div class="stat reveal"><b data-count="250" data-suffix="+">0</b><span>Community Members</span></div>
+        <div class="stat reveal"><b data-count="30" data-suffix="+">0</b><span>Events &amp; Workshops</span></div>
+        <div class="stat reveal"><b data-count="6">0</b><span>Learning Tracks</span></div>
+        <div class="stat reveal"><b data-count="15" data-suffix="+">0</b><span>Projects Built</span></div>
+      </div>
+      <p class="container stats-note">Sample numbers – replace with your chapter's real figures in <code>index.html</code>.</p>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">About</p>
+          <h2>What is GDG on Campus?</h2>
+          <p class="lead">
+            Google Developer Groups (GDG) on Campus is a program that helps college students
+            learn, practise and share Google technologies through peer-to-peer events and projects.
+            Our chapter at RIT Hassan brings that community to the Computer Science and Engineering Department.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <article class="card about-card reveal">
+            <div class="ic ic-blue" aria-hidden="true">🎯</div>
+            <h3>Our Mission</h3>
+            <p>Make hands-on tech learning accessible to every student, regardless of branch or experience level, through free, practical, student-led sessions.</p>
+          </article>
+          <article class="card about-card reveal">
+            <div class="ic ic-red" aria-hidden="true">🔭</div>
+            <h3>Our Vision</h3>
+            <p>A campus where students graduate not only with degrees but with real projects, portfolios, mentors and a network of builders.</p>
+          </article>
+          <article class="card about-card reveal">
+            <div class="ic ic-yellow" aria-hidden="true">🤝</div>
+            <h3>Our Values</h3>
+            <p>Inclusivity, curiosity, collaboration and learning by doing. Everyone is welcome to ask, build, break things and try again.</p>
+          </article>
+          <article class="card about-card reveal">
+            <div class="ic ic-green" aria-hidden="true">🌱</div>
+            <h3>Our Objectives</h3>
+            <p>Run regular workshops, support project teams, prepare students for hackathons and internships, and connect them to the wider GDG network.</p>
+          </article>
+        </div>
+
+        <div class="timeline reveal" aria-label="Chapter journey">
+          <div class="tl-item"><span class="tl-dot c-blue"></span><b>Learn</b><p>Beginner-friendly sessions and study jams</p></div>
+          <div class="tl-item"><span class="tl-dot c-red"></span><b>Practise</b><p>Hands-on labs, coding challenges and mini projects</p></div>
+          <div class="tl-item"><span class="tl-dot c-yellow"></span><b>Build</b><p>Team projects, hackathons and demo days</p></div>
+          <div class="tl-item"><span class="tl-dot c-green"></span><b>Share</b><p>Teach juniors, speak at events and mentor others</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MAIN CONTENT: TRACKS ===================== -->
+    <section class="section alt" id="tracks">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">What We Do</p>
+          <h2>Learning Tracks</h2>
+          <p class="lead">Pick a track, join its sessions and ship something real. Tap a card to see what it covers.</p>
+        </header>
+
+        <div class="tracks-grid" id="tracks-grid"><!-- rendered by js/main.js from js/data.js --></div>
+      </div>
+    </section>
+
+    <!-- ===================== MAIN CONTENT: EVENTS ===================== -->
+    <section class="section" id="events">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Events</p>
+          <h2>Workshops, Hackathons &amp; Meetups</h2>
+          <p class="lead">Search and filter our events. Sample entries are shown; edit them in <code>js/data.js</code>.</p>
+        </header>
+
+        <div class="toolbar reveal">
+          <label class="search">
+            <span class="sr-only">Search events</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"/></svg>
+            <input type="search" id="event-search" placeholder="Search events, topics, speakers…" autocomplete="off" />
+          </label>
+          <div class="filters" id="event-filters" role="group" aria-label="Filter events by type">
+            <button class="pill is-active" data-filter="all" aria-pressed="true">All</button>
+            <button class="pill" data-filter="workshop" aria-pressed="false">Workshops</button>
+            <button class="pill" data-filter="hackathon" aria-pressed="false">Hackathons</button>
+            <button class="pill" data-filter="talk" aria-pressed="false">Talks</button>
+            <button class="pill" data-filter="studyjam" aria-pressed="false">Study Jams</button>
+          </div>
+        </div>
+
+        <p id="event-count" class="muted" aria-live="polite"></p>
+        <div class="events-grid" id="events-grid"></div>
+        <p id="events-empty" class="empty" hidden>No events match your search. Try another keyword or filter.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section class="section alt" id="features">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Features</p>
+          <h2>Why Join Our Chapter?</h2>
+          <p class="lead">Everything you need to go from "Hello World" to a portfolio you are proud of.</p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature reveal"><div class="f-ic c-blue">🛠️</div><h3>Hands-on Workshops</h3><p>Build as you learn. Every session ends with something running on your laptop or phone.</p></article>
+          <article class="feature reveal"><div class="f-ic c-red">🏆</div><h3>Hackathons &amp; Contests</h3><p>Team up, solve real problems in a limited time and present your idea to mentors.</p></article>
+          <article class="feature reveal"><div class="f-ic c-yellow">🧑‍🏫</div><h3>Mentorship</h3><p>Seniors, alumni and industry guests guide you on projects, internships and careers.</p></article>
+          <article class="feature reveal"><div class="f-ic c-green">📚</div><h3>Free Resources</h3><p>Curated roadmaps, slides and recordings so you can learn at your own pace.</p></article>
+          <article class="feature reveal"><div class="f-ic c-blue">🌐</div><h3>Google Ecosystem</h3><p>Access to Google Developer programs, Cloud Skills Boost labs and the global GDG community.</p></article>
+          <article class="feature reveal"><div class="f-ic c-red">💼</div><h3>Portfolio &amp; Careers</h3><p>Show projects on GitHub, collect badges and get feedback before placements.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ROADMAP / FAQ ===================== -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <header class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Frequently Asked Questions</h2>
+        </header>
+        <div class="accordion reveal" id="faq-list">
+          <details><summary>Who can join GDG on Campus RIT Hassan?</summary><p>Any student of RIT from any branch or year. No prior coding experience is needed, only curiosity.</p></details>
+          <details><summary>Is there a membership fee?</summary><p>Our regular learning sessions are community-driven. Check each event card for any specific details.</p></details>
+          <details><summary>Do I need my own laptop?</summary><p>A laptop helps for workshops. If you do not have one, team up with a friend, as we encourage pair learning.</p></details>
+          <details><summary>How can I become a core team member?</summary><p>Attend events, contribute to projects and watch for recruitment announcements. We look for consistency and attitude over experience.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TEAM ===================== -->
+    <section class="section alt" id="team">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Team</p>
+          <h2>Meet the Core Team</h2>
+          <p class="lead">Student leaders and faculty mentors who keep the community running. Sample entries; edit in <code>js/data.js</code>.</p>
+        </header>
+        <div class="team-grid" id="team-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== JOIN CTA ===================== -->
+    <section class="cta" id="join">
+      <div class="container cta-inner reveal">
+        <h2>Ready to build something awesome?</h2>
+        <p>Join the community, meet fellow developers and start your journey with Google technologies.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-light">Get in Touch</a>
+          <a href="https://gdg.community.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">Visit GDG Community ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Say Hello</h2>
+          <p class="lead">Questions, collaboration ideas or want to speak at an event? Send us a message.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-item"><span class="ic ic-blue" aria-hidden="true">📍</span>
+              <div><b>Address</b><p>Rajeev Institute of Technology, Industrial Area, Hassan, Karnataka, India</p></div></div>
+            <div class="info-item"><span class="ic ic-red" aria-hidden="true">✉️</span>
+              <div><b>Email</b><p><a href="mailto:gdg@example.com" id="contact-email">gdg@example.com</a></p></div></div>
+            <div class="info-item"><span class="ic ic-yellow" aria-hidden="true">🏫</span>
+              <div><b>Department</b><p>Computer Science and Engineering, RIT Hassan</p></div></div>
+            <div class="socials" aria-label="Social links">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+              <a href="https://gdg.community.dev/" target="_blank" rel="noopener noreferrer" aria-label="GDG Community">G</a>
+            </div>
+            <p class="muted small">Replace the placeholder email and social links with your chapter's real ones.</p>
+          </div>
+
+          <form class="card contact-form reveal" id="contact-form" novalidate>
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" required autocomplete="name" />
+              <small class="err" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" required autocomplete="email" />
+              <small class="err" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="cf-topic">Topic</label>
+              <select id="cf-topic" name="topic">
+                <option>General question</option>
+                <option>Join the community</option>
+                <option>Speak / collaborate</option>
+                <option>Sponsorship</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" name="message" rows="5" required minlength="10"></textarea>
+              <small class="err" aria-live="polite"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logos">
+          <img src="assets/logos/rit-logo.png" alt="RIT logo" height="40" onerror="logoFallback(this,'RIT')" />
+          <img src="assets/logos/cse-logo.png" alt="CSE Department logo" height="40" onerror="logoFallback(this,'CSE')" />
+          <img src="assets/logos/gdg-logo.png" alt="GDG on Campus RIT Hassan logo" height="40" onerror="logoFallback(this,'GDG')" />
+        </div>
+        <p class="muted small">GDG on Campus – RIT Hassan<br />Rajeev Institute of Technology, Hassan.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tracks">Tracks</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="https://developers.google.com/" target="_blank" rel="noopener noreferrer">Google Developers</a></li>
+          <li><a href="https://gdg.community.dev/" target="_blank" rel="noopener noreferrer">GDG Community</a></li>
+          <li><a href="https://developer.android.com/" target="_blank" rel="noopener noreferrer">Android Developers</a></li>
+          <li><a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> GDG on Campus – RIT Hassan. All rights reserved.</p>
+      <p class="muted small">Student-run community website. Google and the Google Developer Groups name are trademarks of Google LLC; this site is not an official Google product.</p>
+      <a href="#top" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
